@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cresse</title>
+</head>
+
+<body>
+    This text is always visible.
+    <div id="react-root-container">
+        <!-- React app renders here -->
+        If rendering from React went good,
+        you don't see this text.
+        <style>
+            #react-root-container { 
+                width: 100%;
+                text-align: center;
+                max-width: 400px;
+                margin: 20px auto; 
+            }
+        </style>
+        <!-- React app end -->
+    </div>
+    <link href="/index.css" rel="stylesheet">
+    <script src="/index.js"></script>
+</body>
+
+</html>
