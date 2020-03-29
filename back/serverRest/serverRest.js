@@ -30,8 +30,8 @@ async function createServerREST(forceHttp = false) {
 
                     const certFile = process.env.CERTIFICATE_FILE;
                     const keyFile = process.env.PRIVATE_KEY_FILE;
-                    this.key = fs.readFileSync(path.join(__dirname, 'selfSignedCert', keyFile));
-                    this.cert = fs.readFileSync(path.join(__dirname, 'selfSignedCert', certFile));
+                    this.key = fs.readFileSync(path.join(__dirname, 'selfSignedCert', keyFile), "utf8");
+                    this.cert = fs.readFileSync(path.join(__dirname, 'selfSignedCert', certFile), "utf8");
 
                     if (this.key && this.cert) {
                         this.protocol = 'https';
